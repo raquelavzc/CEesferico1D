@@ -43,6 +43,8 @@ Estos scripts procesan los archivos .dat producidos por las simulaciones Fortran
 Para obtener las animaciones de cualquier variable del código principal se utiliza la siguiente intrucción:
 
 `Python .\animacion_CEesferico1D.py --mode profile --variable scalar --output animacion_scalar.gif`
+
 `Python .\animacion_CEesferico1D.py --mode profile --variable alpha --output animacion_alpha.gif`
+
 `Python .\animacion_CEesferico1D.py --mode profile --variable a --output animacion_a.gif`
 
