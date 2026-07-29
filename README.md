@@ -1,5 +1,5 @@
 # CEesferico1D
-En este repositorio se encuentran el código CEesferico1D.f90 en el cual se evoluciona el sistema de ecuaciones Einstein-Klein-Gordon correspondiente al Proyecto Terminal de Investigación Teórica llamado "Fenómenos críticos: colapso gravitacional de un campo escalar sin masa" y los correpondientes scripts para obtener los gráficos y aniamciones hechas en python.
+En este repositorio se encuentran el código CEesferico1D.f90 el cual evoluciona el sistema de ecuaciones Einstein-Klein-Gordon correspondiente al Proyecto Terminal de Investigación Teórica llamado "Fenómenos críticos: colapso gravitacional de un campo escalar sin masa" y los correpondientes scripts para obtener los gráficos y aniamciones hechas en python.
 
 El archivo PDF correspondiente al proyecto terminal se encuentra en la carpeta nombrada como `Escrito PT` y en él se encuentran las bases teóricas fundamentales para introducirse en la Relatividad Numérica y la evolución hiperbólica para el estudio de los fenómenos críticos o bien, el colapso gravitacional. Por lo que es recomedable que el usuario lea los capítulo 6, 7 y 8 para una mejor compresión de la estructura de este código.
 
