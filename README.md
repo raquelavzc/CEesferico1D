@@ -73,11 +73,23 @@ El archivo valores_centrales.dat debe contener los valores de φ₀ y la densida
 
 Por lo que para ejecutar este programa se debe proporcionar el valor crítico phi_c con la siguiente instrucción
 
+`python graficar_gamma_rho.py 0.35294658892608627` 
+
+
 # Ejemplo de una corrida 
 
 Si ejecutamos el programa principal con los valores `.\CEesferico1D.exe 640 64 20 0.05 ` y posteriormente ejecutamos `Python .\animacion_CEesferico1D.py --mode profile --variable scalar --xmax 5 --ymin -0.06 --ymax 0.06 --interval 80 --output animacion_scalar.gif` se obtiene:
 
 <img width="800" height="480" alt="animacion_scalar" src="https://github.com/user-attachments/assets/d0f131cb-c18d-41c6-965d-3e14737d5dc5" />
 
+lo que corresponde a una solución subcrítica. 
+A su vez, podemos expotar paneles como los siguientes ejemplos:
 
-python graficar_gamma_rho.py 0.35294658892608627
+<img width="2227" height="1556" alt="panel_CEesferico1D_alpha" src="https://github.com/user-attachments/assets/a717b801-4cd5-47de-b6c1-f160a0709303" />
+
+<img width="2227" height="1559" alt="panel_CEesferico1D_a_sub" src="https://github.com/user-attachments/assets/4affedc2-aa8e-4a80-86fd-c2e0566d16d6" />
+
+<img width="2227" height="1556" alt="panel_CEesferico1D_mass_sub" src="https://github.com/user-attachments/assets/da6f5d1b-b1f4-4a74-9042-33f90bb9a8cb" />
+
+
+
