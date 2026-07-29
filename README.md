@@ -83,12 +83,15 @@ Si ejecutamos el programa principal con los valores `.\CEesferico1D.exe 640 64 2
 <img width="800" height="480" alt="animacion_scalar" src="https://github.com/user-attachments/assets/d0f131cb-c18d-41c6-965d-3e14737d5dc5" />
 
 lo que corresponde a una solución subcrítica. 
-A su vez, podemos expotar paneles como los siguientes ejemplos:
+A su vez, para esos mismos valores podemos expotar paneles como los siguientes ejemplos:
 
+Para la función lapso
 <img width="2227" height="1556" alt="panel_CEesferico1D_alpha" src="https://github.com/user-attachments/assets/a717b801-4cd5-47de-b6c1-f160a0709303" />
 
+Para la función métrica a
 <img width="2227" height="1559" alt="panel_CEesferico1D_a_sub" src="https://github.com/user-attachments/assets/4affedc2-aa8e-4a80-86fd-c2e0566d16d6" />
 
+Para la función de masa
 <img width="2227" height="1556" alt="panel_CEesferico1D_mass_sub" src="https://github.com/user-attachments/assets/da6f5d1b-b1f4-4a74-9042-33f90bb9a8cb" />
 
 
