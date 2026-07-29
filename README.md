@@ -19,7 +19,7 @@ Los archivos que se encuentran en la carpeta CODE son los siguientes:
 
 | Archivo | Función |
 |---|---|
-| `CEesferico1D.f90` | Programa principal para la evolución esférica en una dimensión. |
+| `CEesferico1D.f90` | Programa principal para la evolución esférica en una dimensión. Para correr el programa primero se ejecuta la instrucción gfortran .\evolucion.f90 .\CEesferico1D.f90 -o .\CEesferico1D.exe y el código se compila con la instrucción .\CEesferico1D.exe   |
 | `biseccion.f90` | Calcula soluciones mediante el método de bisección para hallar el valor crítico. |
 | `evolucion.f90` | Rutinas o programa para evolución temporal. |
 | `gamma_rho.f90` | Cálculos necesarios para obtener la ley de potencia poder medio de `gamma` y `rho`. |
