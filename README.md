@@ -24,4 +24,5 @@ Los archivos que se encuentran en la carpeta CODE son los siguientes:
 | `evolucion.f90` | Este programa contiene las subrutinas del programa principal |
 | `gamma_rho.f90` | Cálculos necesarios para obtener la ley de potencia poder medio de `gamma` y la densidad de materia/energía `rho`. |
 | `valores_centrales.dat` | Archivo de datos de entrada con valores centrales para phi0_real y `gamma` y `rho` para obtener la gráfica log-log|
+
 Algunos programas pueden requerir que valores_centrales.dat permanezca en la misma carpeta que el ejecutable.
