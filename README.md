@@ -20,7 +20,7 @@ Los archivos que se encuentran en la carpeta CODE son los siguientes:
 | Archivo | Función |
 |---|---|
 | `CEesferico1D.f90` | Programa principal para la evolución esférica en una dimensión. |
-| `biseccion.f90` | Calcula soluciones mediante el método de bisección. |
+| `biseccion.f90` | Calcula soluciones mediante el método de bisección para hallar el valor crítico. |
 | `evolucion.f90` | Rutinas o programa para evolución temporal. |
-| `gamma_rho.f90` | Cálculos relacionados con los parámetros `gamma` y `rho`. |
-| `valores_centrales.dat` | Archivo de datos de entrada con valores centrales. |
+| `gamma_rho.f90` | Cálculos necesarios para obtener la ley de potencia poder medio de `gamma` y `rho`. |
+| `valores_centrales.dat` | Archivo de datos de entrada con valores centrales para phi0_real y `gamma` y `rho` para obtener la gráfica log-log|
