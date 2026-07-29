@@ -30,6 +30,12 @@ Algunos programas pueden requerir que valores_centrales.dat permanezca en la mis
 Los programas pueden generar archivos de datos con extensión .dat. Estos contienen los resultados numéricos de la simulación o cálculo y pueden utilizarse posteriormente para hacer gráficas o análisis con los programas de la carpeta Plot.
 
 # Scripts de Python para visualización (Carpeta Plot)
+Estos scripts procesan los archivos .dat producidos por las simulaciones Fortran. Generan gráficas, paneles o animaciones en formato GIF o PNG.
 
-
+| Archivo | Función | Datos requeridos |
+|---|---|---|
+| `animacion_CEesferico1D.py` | Genera animaciones, series temporales o paneles de las variables de la evolución esférica. | `CEesferico1D_*.dat` |
+| `animacion_masa.py` | Genera animaciones o paneles de la masa de Misner–Sharp y de `2m/r`. | `mass_*.dat` |
+| `alpha_critica.py` / `graficar_alpha_critica.py` | Compara la evolución de `alpha` para las soluciones subcrítica y supercrítica cercanas al valor crítico. | `biseccion.csv`, ejecutable de evolución y archivos `CEesferico1D_*.dat` |
+| `gamma_rho.py` / `graficar_gamma_rho.py` | Ajusta y grafica el exponente crítico `γ` a partir de datos centrales. | `valores_centrales.dat` |
 
