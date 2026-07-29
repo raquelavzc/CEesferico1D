@@ -40,7 +40,7 @@ Estos scripts procesan los archivos .dat producidos por las simulaciones Fortran
 | `gamma_rho.py` / `graficar_gamma_rho.py` | Ajusta y grafica el exponente crítico `γ` a partir de datos centrales. | `valores_centrales.dat` |
 
 
-Para obtener las animaciones de cualquier variable del código principal `animacion_CEesferico1D.py` se utiliza la siguiente intrucción:
+1.- Para obtener las animaciones de cualquier variable del código principal `animacion_CEesferico1D.py` se utiliza la siguiente intrucción:
 
 `Python .\animacion_CEesferico1D.py --mode profile --variable scalar --output animacion_scalar.gif`
 
@@ -54,16 +54,16 @@ Además, se puede ajustar la escala de las animaciones con una intrucción como 
 
 Esta instrucción de ajuste de escala se puede modificar para cualquier variable a observar.
 
-Para la función de masa, se compila el programa  `animacion_masa.py` con la isntrucción: 
+2.- Para la función de masa, se compila el programa  `animacion_masa.py` con la isntrucción: 
 
 `python .\animacion_masa.py`
 
-Para obtener la gráfica de `alpha central` se obtiene con una isntrucción como la siguiente:
+3.- Para obtener la gráfica de `alpha central` se obtiene con una isntrucción como la siguiente:
 
 `python .\graficar_alpha_critica.py --nr 640 --rmax 64.0 --tfinal 20.0 --output alpha_central_critica.png`
 
 
-El script `gamma_rho.py` ajusta la relación:
+4.- El script `gamma_rho.py` ajusta la relación:
 
 ln(ρ_c^max) = C - 2γ ln(φ* - φ₀)
 
@@ -72,5 +72,12 @@ donde φ* es el valor crítico
 El archivo valores_centrales.dat debe contener los valores de φ₀ y la densidad central máxima ρ_c^max.
 
 Por lo que para ejecutar este programa se debe proporcionar el valor crítico phi_c con la siguiente instrucción
+
+# Ejemplo de una corrida 
+
+Si ejecutamos el programa principal con los valores `.\CEesferico1D.exe 640 64 20 0.05 ` y posteriormente ejecutamos `Python .\animacion_CEesferico1D.py --mode profile --variable scalar --xmax 5 --ymin -0.06 --ymax 0.06 --interval 80 --output animacion_scalar.gif` se obtiene:
+
+<img width="800" height="480" alt="animacion_scalar" src="https://github.com/user-attachments/assets/d0f131cb-c18d-41c6-965d-3e14737d5dc5" />
+
 
 python graficar_gamma_rho.py 0.35294658892608627
