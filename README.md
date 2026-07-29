@@ -39,3 +39,10 @@ Estos scripts procesan los archivos .dat producidos por las simulaciones Fortran
 | `alpha_critica.py` / `graficar_alpha_critica.py` | Compara la evolución de `alpha` para las soluciones subcrítica y supercrítica cercanas al valor crítico. | `biseccion.csv`, ejecutable de evolución y archivos `CEesferico1D_*.dat` |
 | `gamma_rho.py` / `graficar_gamma_rho.py` | Ajusta y grafica el exponente crítico `γ` a partir de datos centrales. | `valores_centrales.dat` |
 
+
+Para obtener las animaciones de cualquier variable del código principal se utiliza la siguiente intrucción:
+
+`Python .\animacion_CEesferico1D.py --mode profile --variable scalar --output animacion_scalar.gif`
+`Python .\animacion_CEesferico1D.py --mode profile --variable alpha --output animacion_alpha.gif`
+`Python .\animacion_CEesferico1D.py --mode profile --variable a --output animacion_a.gif`
+
