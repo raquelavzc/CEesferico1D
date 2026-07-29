@@ -35,12 +35,12 @@ Estos scripts procesan los archivos .dat producidos por las simulaciones Fortran
 | Archivo | Función | Datos requeridos |
 |---|---|---|
 | `animacion_CEesferico1D.py` | Genera animaciones, series temporales o paneles de las variables de la evolución esférica. | `CEesferico1D_*.dat` |
-| `animacion_masa.py` | Genera animaciones o paneles de la masa de Misner–Sharp y de `2m/r`. | `mass_*.dat` |
+| `animacion_masa.py` | Genera animaciones o paneles de la función de masa de Misner–Sharp y la relación `2m/r`. | `mass_*.dat` |
 | `alpha_critica.py` / `graficar_alpha_critica.py` | Compara la evolución de `alpha` para las soluciones subcrítica y supercrítica cercanas al valor crítico. | `biseccion.csv`, ejecutable de evolución y archivos `CEesferico1D_*.dat` |
 | `gamma_rho.py` / `graficar_gamma_rho.py` | Ajusta y grafica el exponente crítico `γ` a partir de datos centrales. | `valores_centrales.dat` |
 
 
-Para obtener las animaciones de cualquier variable del código principal se utiliza la siguiente intrucción:
+Para obtener las animaciones de cualquier variable del código principal `animacion_CEesferico1D.py` se utiliza la siguiente intrucción:
 
 `Python .\animacion_CEesferico1D.py --mode profile --variable scalar --output animacion_scalar.gif`
 
@@ -48,3 +48,29 @@ Para obtener las animaciones de cualquier variable del código principal se util
 
 `Python .\animacion_CEesferico1D.py --mode profile --variable a --output animacion_a.gif`
 
+Además, se puede ajustar la escala de las animaciones con una intrucción como esta:
+
+`Python .\animacion_CEesferico1D.py --mode profile --variable scalar --xmax 5 --ymin -0.1 --ymax 0.5 --interval 80 --output animacion_scalar.gif`
+
+Esta instrucción de ajuste de escala se puede modificar para cualquier variable a observar.
+
+Para la función de masa, se compila el programa  `animacion_masa.py` con la isntrucción: 
+
+`python .\animacion_masa.py`
+
+Para obtener la gráfica de `alpha central` se obtiene con una isntrucción como la siguiente:
+
+`python .\graficar_alpha_critica.py --nr 640 --rmax 64.0 --tfinal 20.0 --output alpha_central_critica.png`
+
+
+El script `gamma_rho.py` ajusta la relación:
+
+ln(ρ_c^max) = C - 2γ ln(φ* - φ₀)
+
+donde φ* es el valor crítico 
+
+El archivo valores_centrales.dat debe contener los valores de φ₀ y la densidad central máxima ρ_c^max.
+
+Por lo que para ejecutar este programa se debe proporcionar el valor crítico phi_c con la siguiente instrucción
+
+python graficar_gamma_rho.py 0.35294658892608627
