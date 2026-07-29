@@ -13,7 +13,7 @@ Paquetes de Python:  py -m pip install numpy matplotlib pillow
 
 Pillow es necesario para que ecuacion_de_onda.py guarde la animación como GIF.
 
-# Ejecución del código
+# Ejecución del código (Carpeta Code)
 También es posible descargarlo con Code → Download ZIP, descomprimirlo y abrir una terminal dentro de la carpeta resultante.
 Los archivos que se encuentran en la carpeta CODE son los siguientes:
 
@@ -26,3 +26,10 @@ Los archivos que se encuentran en la carpeta CODE son los siguientes:
 | `valores_centrales.dat` | Archivo de datos de entrada con valores centrales para phi0_real y `gamma` y `rho` para obtener la gráfica log-log|
 
 Algunos programas pueden requerir que valores_centrales.dat permanezca en la misma carpeta que el ejecutable.
+
+Los programas pueden generar archivos de datos con extensión .dat. Estos contienen los resultados numéricos de la simulación o cálculo y pueden utilizarse posteriormente para hacer gráficas o análisis con los programas de la carpeta Plot.
+
+# Scripts de Python para visualización (Carpeta Plot)
+
+
+
